@@ -38,8 +38,10 @@ jobs:
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
         with:
+          sdk: nightly
           combine: true
           target: ${{ matrix.config.target }}
           configure-args: -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+
 
       
