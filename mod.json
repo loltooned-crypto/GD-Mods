@@ -1,0 +1,62 @@
+{
+    "geode": "3.5.0",
+    "gd": {
+        "win": "*",
+        "android": "*",
+        "mac": "*",
+        "ios": "*"
+    },
+    "id": "yourname.click-indicators",
+    "name": "Click Indicators",
+    "version": "1.0.0",
+    "developer": "YourName",
+    "description": "Two bars that light up the instant you press and release. Player 1 is green, Player 2 lights up in red once it sees any dual-mode input. Works in any level since it just reflects your own input, not the level layout.",
+    "resources": {
+        "files": [
+            "resources/click.ogg",
+            "resources/release.ogg"
+        ]
+    },
+    "settings": {
+        "appearance": {
+            "type": "title",
+            "name": "Appearance"
+        },
+        "player1-color": {
+            "name": "Player 1 Color",
+            "type": "rgb",
+            "default": "#35e07a"
+        },
+        "player2-color": {
+            "name": "Player 2 Color",
+            "type": "rgb",
+            "default": "#ff3355"
+        },
+        "bar-scale": {
+            "name": "Bar Size",
+            "type": "float",
+            "default": 1.0,
+            "min": 0.5,
+            "max": 2.0,
+            "control": { "slider": true }
+        },
+        "audio": {
+            "type": "title",
+            "name": "Audio"
+        },
+        "enable-sound": {
+            "name": "Enable Click Sounds",
+            "description": "Plays a short sound on press and a different one on release.",
+            "type": "bool",
+            "default": true
+        },
+        "sound-volume": {
+            "name": "Sound Volume",
+            "type": "float",
+            "default": 0.8,
+            "min": 0.0,
+            "max": 1.0,
+            "control": { "slider": true }
+        }
+    }
+}
